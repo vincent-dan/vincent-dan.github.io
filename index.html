@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <meta name="description"
+    content="Vincent Dan | Portfolio, Visit and know about me & my projects/designs. I value simple content structure, clean design patterns, and thoughtful interactions." />
+  <meta name="keywords"
+    content="Vincent Dan,Vincent Dan portfolio,Vincent Dan's Portfolio,vincentdan,Vincent Dan site,Vincent Dans Site,Vincent Dan me,Vincent Dan web,Vincent Dan github,vincentdan site,vincentdan uiverse,uiverse,Vincent Dan uiverse,Vincent Dan frontend developer,frontend developer,Vincent Dan ponedera,Vincent Dan" />
+  <meta name="author" content="Vincent Dan" />
+  <meta property="og:title" content="Vincent Dan | Portfolio" />
+  <meta property="og:description"
+    content="Hi! My name is Vincent. I'm a web developer and digital visual artist. Visit and know about me & my projects/designs. I value simple content structure, clean design patterns, and thoughtful interactions." />
+
+    <meta property="og:site_name" content="Vincent Dan's Portfolio" />
+
+  <meta name="twitter:site" content="@Portfolio" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Vincent Dans | Portfolio" />
+  <meta name="twitter:description"
+  content="Hi! My name is Vincent. I'm a web developer and digital visual artist. Visit and know about me & my projects/designs. I value simple content structure, clean design patterns, and thoughtful interactions." />
+  <title>Vincent Dan | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+
+  <script src="pt.min.js"></script>
+
+<body class="body">
+  <div id="preloader"></div>
+  <noscript>Allow Javascript</noscript>
+
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
+    <div class="navbar" id="navbar">
+      <div class="hey">Hey!</div>
+      <div class="logo" tabindex="0" aria-label="Vincent Dan logo">
+        <div class="logo-top">
+          <img src="src/png/latvia.png" width="50px" style="aspect-ratio: 1; margin-right: 20px; height: 50px;"/>
+          <h1 class="logo">Riga, Latvia</h1>
+        </div>
+      </div>
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="#home" tabindex="0" aria-label="Home menu button">
+              &#60;/Home&#62;
+            </a>
+          </li>
+
+          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="#about" aria-label="about menu button">
+              &#60;/AboutMe&#62;
+            </a>
+          </li>
+
+          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="#skills" aria-label="skills menu button">
+              &#60;/Skills&#62;
+            </a>
+          </li>
+
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="#projects" aria-label="projects menu button">
+              &#60;/Projects&#62;
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- navbar tabs ends -->
+    </div>
+  </header>
+  <!-- header ends here -->
+
+  <main>
+    <!-- canvas -->
+    <div id="pt" class="canvas"></div>
+    <!-- hamburger -->
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+    <!-- hamburger -->
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+          <a href="#home" tabindex="0" aria-label="Home menu button">
+            &#60;/Home&#62;
+          </a>
+        </li>
+
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+          <a href="#about" tabindex="0" aria-label="about menu button">
+            &#60;/AboutMe&#62;
+          </a>
+        </li>
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+          <a href="#skills" tabindex="0" aria-label="skills menu button">
+            &#60;/Skills&#62;
+          </a>
+        </li>
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="#projects" tabindex="0" aria-label="projects menu button">
+            &#60;/Projects&#62;
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- mobile toggle menu ends -->
+
+    <section class="landing-page-container" id="home">
+      <div class="blob"></div>
+
+      <div class="text-content">
+        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+          <p class="jello">H</p>
+          <p class="jello">e</p>
+          <p class="jello">l</p>
+          <p class="jello">l</p>
+          <p class="jello">o</p>
+          <p class="jello">!</p>
+          &nbsp;
+          <p class="jello">I</p>
+          <p class="jello">'</p>
+          <p class="jello">m</p>
+        </article>
+        <article id="name" data-aos="fade-up" data-aos-delay="200">
+          <p class="jello">V</p>
+          <p class="jello">i</p>
+          <p class="jello">n</p>
+          <p class="jello">c</p>
+          <p class="jello">e</p>
+          <p class="jello">n</p>
+          <p class="jello">t</p>
+          &nbsp;
+          <p class="jello">D</p>
+          <p class="jello">a</p>
+          <p class="jello">n</p>
+          <p class="jello">.</p>
+        </article>
+
+        <article id="work" data-aos="fade-up" data-aos-delay="400">
+          <div>
+            <p class="jello">S</p>
+            <p class="jello">E</p>
+            <p class="jello">N</p>
+            <p class="jello">I</p>
+            <p class="jello">O</p>
+            <p class="jello">R</p>
+          </div>
+          <div>
+            <p class="jello">F</p>
+            <p class="jello">U</p>
+            <p class="jello">L</p>
+            <p class="jello">L</p>
+            <p class="jello">-</p>
+            <p class="jello">S</p>
+            <p class="jello">T</p>
+            <p class="jello">A</p>
+            <p class="jello">C</p>
+            <p class="jello">K</p>
+          </div>
+          <div>
+            <p class="jello">E</p>
+            <p class="jello">N</p>
+            <p class="jello">G</p>
+            <p class="jello">I</p>
+            <p class="jello">N</p>
+            <p class="jello">E</p>
+            <p class="jello">E</p>
+            <p class="jello">R</p>
+          </div>
+          <h6 style="color: var(--color-white);">Weaving Code Spells: the Digital Alchemist.</h6>
+        </article>
+        <h3 id="info-para" data-aos="fade-up" data-aos-delay="600">
+          I'm a senior full-stack engineer with over 9 years of experience in web development. 
+          I have core strengths in initiating projects from scratch as well as jumping into an existing architecture.
+        </h3>
+        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
+          <a href="mailto:vincentdan118@gmail.com" tabindex="-1">
+            <button class="letsTalkBtn">
+              <p class="letsTalkBtn-text">Let's Talk!</p>
+              <span class="letsTalkBtn-BG"></span>
+            </button></a>
+          <button class="resume-btn" id="resume-btn" onclick="openURL()">
+            <div class="sign">
+              <svg viewBox="0 0 640 512">
+            <path
+              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+              </svg>
+            </div>
+            <div class="text">Resume</div>
+          </button>
+          <div class="setting-container" id="setting-container">
+            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
+
+            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
+              aria-label="settings for sound and appearance"></label>
+
+            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
+              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
+                aria-label="switch appearance"></label>
+            </div>
+
+          </div>
+          <!-- setting div ends -->
+        </div>
+        <!-- contact-btn-div -->
+      </div>
+     
+    </section>
+    <!-- landing page ends here -->
+    <section class="about-section-container" id="about" data-aos="fade-up">
+      <div class="about-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
+            &#60;/AboutMe&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="info-dp-section">
+            <div class="career">
+              <div class="timeline">
+                <div class="outer">
+                  <div class="card">
+                    <div class="info">
+                      <h2 class="title">Senior Full-Stack Engineer</h2>
+                      <div class="subtitle">Agorapulse
+                        <p>03/2023-04/2024</p>
+                      </div>
+                      <div class="company-info">Agorapulse is a software company focused on social media management platform that helps businesses schedule,
+                        analyze, and engage with their audience across various social media channels.</div>
+                      <p class="work-exp">
+                        - Developed and published a social media management platform with MERN stack and AWS.<br/>
+                        - Implemented features such as a unified inbox, interactive calendar, team collaboration, bulk post scheduling, and integrated payment gateway and OpenAI APIs for AI writing assistant.<br/>
+                        - Established analytics and reporting functionalities to track engagement metrics and integrated social media APIs.<br/>
+                        - Managed multiple code bases simultaneously, handling bug fixes, code reviews and pushing updates to live
+                        production environments.<br/>
+                        - Delivered engaging and visually compelling web UI that are cross-browser compatible and mobile responsive.<br/>
+                        - Developed multiple microservices to enhance and support various features.<br/>
+                        - Implemented Agile methodology using Jira, Slack, MS Teams, while managing version control with GitLab.<br/></p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="info">
+                      <h2 class="title">Full Stack Developer</h2>
+                      <div class="subtitle">Cognizant
+                        <p>01/2018-02/2023</p>
+                      </div>
+                      <div class="company-info">Cognizant is a global IT service company specializes in consulting, technology services like software development, cloud                     computing, data analytics and enterprise applications for businesses across various industries.</div>
+                      <p class="work-exp">
+                        - Developed an online learning platform with React.js, Ruby on Rails and MongoDB running on Kubernetes on AWS. <br/>
+                        - Built main Ruby on Rails/Backbone.js customer-facing web application, ensuring fast performance and maintenance.<br/>
+                        - Defined a styled-components UI theme and migrated the existing styling system into using it.<br/>
+                        - Created a custom component library with React-styled components, and Storybook, including packaging and
+                        publishing with Lerna and Rollup.<br/>
+                        - Collaborated with frontend developers to integrate the API endpoints into the web interface.<br/>
+                        - Optimized application performance through caching strategies, database indexing, and query optimization techniques.<br/>
+                        - Implemented real-time features like notifications and chats using WebSockets and ActionCable. </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="info">
+                      <h2 class="title">Back End Developer</h2>
+                      <div class="subtitle">Vertice
+                        <p>08/2016-12/2017</p>
+                      </div>
+                      <div class="company-info">Vertice is a SaaS company offering a spend optimization platform designed to help businesses reduce their annual
+                        software expenditures. It provides visibility, control, and guaranteed savings on cloud costs.</div>
+                      <p class="work-exp">- Created SaaS products that are hosted in the cloud and accessed via the web using Python, Django, and AWS.<br/>
+                        - Migrated database from MariaDB on AWS RDS to PostgreSQL on Heroku, wrote a suite of tests to ensure full data integrity, create new indexes, and updated sequences.<br/>
+                        - Designed and developed RESTful APIs using FastAPI, a high-performance Python web framework.<br/>
+                        - Analyzed and optimized performance bottlenecks in existing backend systems, such as database queries and storage solutions, to increase responsiveness.<br/>
+                        - Successfully integrated third-party applications and tools, such as email marketing services, analytics, inventory management, and shipping solutions, to enhance the platform's functionality.<br/>
+                        - Integrated AWS CodeDeploy and Jenkins with Selenium and JUnit for automated code deploying and testing.<br/>
+                        - Used RSpec and pytest for conducting Test-Driven Development(TDD) and Behavior Driven Development(BDD).<br/>
+                       </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="info">
+                      <h2 class="title">UI/UX Developer</h2>
+                      <div class="subtitle">Joom
+                        <p>10/2015-07/2016</p>
+                      </div>
+                      <div class="company-info">Joom is an e-commerce marketplace platform that retails and distributes apparel, consumer products, appliances, and
+                        accessories from Asia and Europe.</div>
+                      <p class="work-exp">- Responsible for building and maintaining JavaScript/TypeScript applications that span multiple e-commerce platforms
+                        and online merchants.<br/>
+                        - Crafted interactive UI/UX with AngularJS, Vue.js and Tailwind CSS, based on Figma pixel-perfect design ensuring mobile-responsive<br/>
+                        - Customized Shopify themes, templates, and plugins to meet branding and design requirements.<br/>
+                        - Established user-friendly layouts using HTML, CSS, and JavaScript to generate an increased user experience and
+                        ensure high-quality design and cross-browser compatibility.<br/>
+                        - Implemented effective SEO strategies to improve visibility and drive organic traffic.<br/>
+                        - Worked with several different frontend frameworks in JavaScript/TypeScript ( Angular.js, React, Redux, Hooks, Node.js, NPMs), and also HTML5, CSS3/SASS/LESS.<br/>
+                        - Customized Shopify themes, templates, and plugins to meet branding and design requirements.<br/>
+                       </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="info">
+                      <h2 class="title">Bachelor's Degree in Software Engineering</h2>
+                      <div class="subtitle">Riga Technical University
+                        <p>10/2012-06/2015</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends  -->
+
+    <section class="skills-section-container" id="skills">
+      <div class="skills-section">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
+            &#60;/Skills&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="frontend-dev-section">
+          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
+            aria-label="As a frontend a developer these are the skills i have">
+            Tech Stack
+          </h3>
+          <ul class="tech-stack-wrapper">
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/jslogo.png" alt="js skill" class="tech-stack-logo" />
+              <span class="tooltip">JavaScript</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/svg/typescript.svg" alt="ts skill" class="tech-stack-logo" />
+              <span class="tooltip">TypeScript</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/svg/java-logo-svgrepo-com.svg" alt="java skill" class="tech-stack-logo" />
+              <span class="tooltip">Java</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/svg/python-svgrepo-com.svg" alt="python skill" class="tech-stack-logo" />
+              <span class="tooltip">Python</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/svg/php-svgrepo-com.svg" alt="php skill" class="tech-stack-logo" />
+              <span class="tooltip">PHP</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/svg/nodejs.svg" alt="nodejs skill" class="tech-stack-logo" />
+              <span class="tooltip">NodeJS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/svg/spring-svgrepo-com.svg" alt="srping skill" class="tech-stack-logo" />
+              <span class="tooltip">Spring</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/svg/sql.svg" alt="sql skill" class="tech-stack-logo" />
+              <span class="tooltip">SQL</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/reactlogo.png" alt="react skill" class="tech-stack-logo" />
+              <span class="tooltip">REACT</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
+              <span class="tooltip">GITHUB</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/svg/angular.svg" alt="angular skill" class="tech-stack-logo" />
+              <span class="tooltip">Angular</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/svg/laravel-logo-svgrepo-com.svg" alt="laravel skill" class="tech-stack-logo" />
+              <span class="tooltip">Laravel</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/svg/docker.svg" alt="docker skill" class="tech-stack-logo" />
+              <span class="tooltip">Docker</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/svg/aws.svg" alt="aws skill" class="tech-stack-logo" />
+              <span class="tooltip">AWS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/svg/jenkins.svg" alt="jenkins skill" class="tech-stack-logo" />
+              <span class="tooltip">Jenkins</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/svg/vue-svgrepo-com.svg" alt="vuejs skill" class="tech-stack-logo" />
+              <span class="tooltip">Vue</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/svg/jira-svgrepo-com.svg" alt="jira skill" class="tech-stack-logo" />
+              <span class="tooltip">Jira</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/svg/mongodb.svg" alt="mongodb skill" class="tech-stack-logo" />
+              <span class="tooltip">MongoDB</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- skills section ends -->
+    <section class="projects-section-container" id="projects">
+      <div class="projects-section-div">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+            &#60;/Projects&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+        <div class="project-boxes-div">
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/webp/agorapulse-logo.svg" alt="Agaropulse website favicon" class="faviconforProject" width="120px"/>
+                <article class="ProjectHeading">Agorapulse</article>
+                <p class="ProjectDescription">
+                  Agorapulse is an all-in-one social media management platform built with MERN stack that evolves with many features, including a social media ROI dashboard, TikTok publishing, analyzing social marketing performance, and more.
+                </p>
+                <div class="project-buttons">
+                   <a href="https://www.agaropulse.com" target="_blank" class="cta"
+                    aria-label="Visit Loandrone">
+                    <span>Visit Website</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/Agorapulse.jpeg" alt="Agaropulse website preview image" />
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box5" id="project-box5">
+              <div class="info-div">
+                <img src="src/webp/vertice_lt.svg" alt="vertice website favicon"
+                  class="faviconforProject" />
+                <article class="ProjectHeading">Vertice</article>
+                <p class="ProjectDescription">
+                  Vertice is a SaaS + Cloud Spend Optimization Platform designed for finance leaders to gain visibility, control, and savings across their SaaS and cloud expenses
+                </p>
+                <div class="project-buttons">
+                  <a href="https://www.vertice.one/" target="_blank" class="cta" aria-label="Visit oneque live">
+                    <span>Visit Website</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/Vertice.jpeg" alt="vertice website preview image" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------- -->
+
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box5" id="project-box5">
+              <div class="info-div">
+                <img src="src/webp/cocolyze-logo-blue.svg" alt="cocolyze website favicon"
+                  class="faviconforProject" />
+                <article class="ProjectHeading">Cocolyze</article>
+                <p class="ProjectDescription">
+                  Cocolyze is an innovative and user-friendly all-in-one SEO platform that simplifies various SEO tasks, provides prioritized recommendations, and offers comprehensive analysis of websites, competitors, and overall online presence.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://cocolyze.com" target="_blank" class="cta" aria-label="Visit Comickaze live">
+                    <span>Visit Website</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/Cocolyze.gif" alt="comickaze website preview image" />
+              </div>
+            </div>
+          </div>
+          
+          <!-- ---------------------- -->
+
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box4" id="project-box4">
+              <div class="info-div">
+                <img src="src/webp/joom-logo.svg" alt="little joom website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">Joom</article>
+                <p class="ProjectDescription">
+                  Joom is an e-commerce marketplace platform that retails and distributes apparel, consumer products, appliances, and
+                  accessories from Asia and Europe.
+                </p>
+                <div class="project-buttons">
+                   <a href="https://www.joom.com/" target="_blank" class="cta"
+                    aria-label="Visit Little Ashe live">
+                    <span>Visit Website</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/joom.jpeg" alt="joom website preview image" />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- main ends here -->
+
+  <footer id="footer">
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+    </button>
+    <div class="footer-background">
+      <div class="footer-blob"></div>
+    </div>
+    <div class="footer-foreground">
+      <div class="footercontainer">
+        <div class="two-words">
+          <article tabindex="0" aria-label="Learning, Living, and Leveling Up, my quote">
+            "Learning, Living, and Leveling Up."
+          </article>
+        </div>
+        <div class="social-media-container">
+          <div class="getintouch-heading">
+            <article>GetinTouch();</article>
+          </div>
+          <div class="logos">
+            <a href="https://www.linkedin.com/in/dan-vincent-lv" target="_blank"
+              aria-label="My Linkdin"><svg class="SocialHandle" viewBox="0 0 448 512">
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+              </svg></a>
+
+            <a href="https://github.com/santa512" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
+                class="SocialHandle">
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+              </svg></a>
+
+            <a href="mailto:vincentdan118@gmail.com" target="_blank" aria-label="My Gmail"><svg id="GmailLogo"
+                viewBox="0 0 512 512">
+                <path
+                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+              </svg></a>
+          </div>
+        </div>
+        <div class="footer-avatar-container">
+          <img src="src/png/footer-avatar-vinod.png" alt="animation-head" class="footer-avatar-img" id="footer-wala-avatar"/>
+          <div class="footer-avatar-face">
+            <div class="footer-avatar-eye footer-left-eye">
+              <div class="footer-pupil"></div>
+            </div>
+            <div class="footer-avatar-eye footer-right-eye">
+              <div class="footer-pupil"></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <article>
+            Design & Built by Vincent Dan
+            &#169; 2024
+          </article>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+
+  <script src="main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function openURL() {
+      var url = "src/pdf/Vincent Dan.pdf";
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      // cursorOuter.style.left = `${posX}px`;
+      // cursorOuter.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          cursorInner.classList.add("hover");
+          cursorOuter.classList.add("hover");
+        });
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
+        });
+      });
+    });
+  </script>
+  <script src="canvas.js"></script>
+</body>
+
+</html>
